@@ -1,8 +1,8 @@
-document.getElementById('sum').onclick=function(){    //вызываем функцию по клику кнопки
-    var firstNum=document.getElementById('first').value; //получаем 1е значение
-    firstNum=parseFloat(firstNum);             //преобразуем 1е число с точкой 
-    var secondNum=document.getElementById('second').value; //получаем 2е значение
-    secondNum=parseFloat(secondNum);    //преобразуем 2е число с точкой
-    var out=document.getElementById('out');  //получаем параграф куда вбивается значение
-    out.innerHTML=firstNum + secondNum;   //функция суммы
+document.getElementById('sum').onclick=f1;    //выполняем функцию по клику
+function f1(){
+    var firstNum=document.getElementById('first').value;  // получаем первое значение
+    var secondNum=document.getElementById('second').value;  // получаем второе значение
+    var result = (firstNum*10+secondNum*10)/10;  //делаем точное значение
+    var out = document.getElementById('out'); //получаем параграф
+    out.innerHTML=result; //выводим результат в параграф
 }
